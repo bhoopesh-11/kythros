@@ -1,0 +1,20 @@
+{
+  "name": "study-tracker-widget",
+  "version": "1.0.0",
+  "description": "Desktop study tracking widget",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc && electron .",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "electron-forge start"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "electron": "^37.2.4",
+    "typescript": "^5.0.0"
+  }
+}
