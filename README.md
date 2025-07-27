@@ -20,3 +20,6 @@ git clone https://github.com/bhoopesh-11/kythros.git
 3. npm run build
 
 4. npm start
+```bash
+
+# After installing using the above commands in bash navigate to the start.bat file and replace the "E\1" with your own file path and now you can run it with opening the bat file 
