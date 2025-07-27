@@ -11,9 +11,9 @@ First, fork this repository to your own GitHub account.
 Then, clone it using:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/bhoopesh-11/kythros.git
 
-1. cd YOUR_REPO_NAME
+1. cd kythros
 
 2. npm init -y
 
