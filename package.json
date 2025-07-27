@@ -16,5 +16,16 @@
     "@types/node": "^20.0.0",
     "electron": "^37.2.4",
     "typescript": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhoopesh-11/kythross.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhoopesh-11/kythross/issues"
+  },
+  "homepage": "https://github.com/bhoopesh-11/kythross#readme"
 }
