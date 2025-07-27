@@ -11,7 +11,8 @@ First, fork this repository to your own GitHub account.
 Then, clone it using:
 
 ```bash
-git clone https://github.com/bhoopesh-11/kythros.git
+git clone https://github.com/YOUR_USERNAME/kythros.git
+
 
 1. cd kythros
 
