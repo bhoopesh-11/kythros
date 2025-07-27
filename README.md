@@ -1,6 +1,6 @@
-# 🚀 Project Setup Guide
+# Project Setup Guide
 
-## 🛠️ Getting Started
+## Getting Started
 
 Follow the steps below to get the project up and running locally:
 
