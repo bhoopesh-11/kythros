@@ -70,6 +70,17 @@ function createWindow() {
         mainWindow = null;
     });
 }
+// IPC handlers for window controls
+electron_1.ipcMain.on('window-minimize', () => {
+    if (mainWindow) {
+        mainWindow.minimize();
+    }
+});
+electron_1.ipcMain.on('window-close', () => {
+    if (mainWindow) {
+        mainWindow.close();
+    }
+});
 // Initialize app
 electron_1.app.whenReady().then(() => {
     createWindow();

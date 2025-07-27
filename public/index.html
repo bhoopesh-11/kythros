@@ -269,9 +269,49 @@
         .recent-sessions::-webkit-scrollbar-thumb:hover {
             background: #6e7681;
         }
+
+        .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 20px;
+            height: 20px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff4757, #ff3742);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            -webkit-app-region: no-drag;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(255, 71, 87, 0.2);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 10;
+        }
+
+        .close-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 3px 8px rgba(255, 71, 87, 0.4);
+            background: linear-gradient(135deg, #ff3742, #ff2d3a);
+        }
+
+        .close-btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 1px 4px rgba(255, 71, 87, 0.3);
+        }
+
+        .close-btn::before {
+            content: '×';
+            line-height: 1;
+        }
     </style>
 </head>
 <body>
+    <button class="close-btn" id="closeBtn"></button>
+
     <div class="widget-container">
         <div class="drag-handle"></div>
         
@@ -321,6 +361,15 @@
     </div>
 
     <script>
+        const { ipcRenderer } = require('electron');
+
+        // Window close handler
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('closeBtn').addEventListener('click', () => {
+                ipcRenderer.send('window-close');
+            });
+        });
+
         class StudyTracker {
             constructor() {
                 this.currentSession = null;
@@ -467,4 +516,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
