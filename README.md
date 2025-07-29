@@ -1,39 +1,54 @@
+# Kythros
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+Kythros is a minimal, distraction-free productivity widget that lives on your desktop — helping you track time, stay focused, and organize your workflow effortlessly.
 
+---
 
-# Project Setup Guide
+## Project Setup Guide
 
-## Getting Started
+###  Getting Started
 
 Follow the steps below to get the project up and running locally:
 
-### 1. Fork & Clone the Repository
+---
 
-First, fork this repository to your own GitHub account.
+###  1. Fork & Clone the Repository
 
+First, fork this repository to your own GitHub account.  
 Then, clone it using:
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/kythros.git
+cd kythros
+npm init -y
+npm run build
+npm start
 
-
-1. cd kythros
-
-2. npm init -y
-
-3. npm run build
-
-4. npm start
-
-ls -1
 ```
+---
 
-## After installing using the above commands in bash navigate to the start.bat file and replace the "E:\1" with your own file path and now you can run it with opening the bat file 
+### 2. Configure Launch Path
 
-## After changing the path in start.bat just double clinkc the launch.vbs file and wait for few secs and you will see the widget in your home screen 
-# You can pin that launch file to start / desktop so that you can open it with ease
+After running the above commands:
 
+- Open `start.bat` in a text editor.
+- Replace the default path `E:\1` with your **own local project path** (e.g., `D:\Projects\kythros`).
+  
+Save the file after editing.
 
+###3. Use `launch.vbs` for Easy Starting
 
+You have two options to start the widget:
 
+- **Option 1:** Navigate to the project folder and double-click `launch.vbs`.
+- **Option 2 (Recommended):** Copy `launch.vbs` to your Desktop or Start Menu and launch it directly.
+
+> This makes accessing the widget much quicker — no need to reopen the terminal every time.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE).
