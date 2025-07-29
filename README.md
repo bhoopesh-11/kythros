@@ -1,6 +1,5 @@
 # Kythros
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Kythros is a minimal, distraction-free productivity widget that lives on your desktop — helping you track time, stay focused, and organize your workflow effortlessly.
 
