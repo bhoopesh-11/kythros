@@ -27,6 +27,9 @@ ls -1
 
 ## After installing using the above commands in bash navigate to the start.bat file and replace the "E:\1" with your own file path and now you can run it with opening the bat file 
 
+## After changing the path in start.bat just double clinkc the launch.vbs file and wait for few secs and you will see the widget in your home screen 
+# You can pin that launch file to start / desktop so that you can open it with ease
+
 
 
 
